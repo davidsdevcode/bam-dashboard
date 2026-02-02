@@ -1354,7 +1354,7 @@ export default function BAMCROStrategy() {
   const activeLabel = tabs.find(t => t.id === activeTab)?.label || "Strategy";
 
   return (
-    <div style={{ fontFamily: font.body, background: B.white, minHeight: "100vh", color: B.black }}>
+    <div style={{ fontFamily: font.body, background: "#f5f3f0", minHeight: "100vh", color: B.black }}>
       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       <style>{`
         @keyframes fadeUp {
@@ -1362,6 +1362,11 @@ export default function BAMCROStrategy() {
           to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
+
+      <div style={{
+        maxWidth: 1100, margin: "0 auto", background: B.white, minHeight: "100vh",
+        boxShadow: "0 0 60px rgba(0,0,0,0.06)",
+      }}>
 
       {/* Header */}
       <div style={{
@@ -1458,6 +1463,7 @@ export default function BAMCROStrategy() {
           </span>
           <span style={{ fontSize: 14, opacity: 0.5, ...goldGrad }}>—</span>
         </div>
+      </div>
       </div>
     </div>
   );
